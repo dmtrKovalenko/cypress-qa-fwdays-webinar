@@ -1,5 +1,6 @@
 describe("Spec", () => {
   it("Should click on the contacts page", () => {
+    cy.viewport(1020, 200);
     cy.visit("https://fwdays.com/en/event/qa-fwdays-conference");
 
     cy.clickOnHeaderLink("Contacts");
