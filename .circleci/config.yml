@@ -8,7 +8,8 @@ orbs:
 workflows:
   build:
     jobs:
-      - cypress/install
+      - cypress/install:
+          yarn: true
       - cypress/run:
           parallelism: 2
           # make sure app has been installed and built
